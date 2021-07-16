@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand text-info" href="#">Pitch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"  data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
+            </li>
+        </ul>
+        <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        <div class="nav-item dropdown col-2 ms-4 align-self-center">
+            <a class="nav-link d-flex flex-column" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img  class="rounded-circle profile-img" height="45" width="45" src="../assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.22 PM.png"/>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+              <li><a class="dropdown-item" href="#">Upload
+              </a></li>
+              <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Inbox
+                <span class="badge rounded-pill bg-info text-dark">25</span>
+            </a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <!--About Modal-->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="aboutModal">About</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <h4>30 seconds from your next play.</h4>
+          <p>
+          As short-form video content rises in popularity due to apps like TikTok and Triller, social media is shifting from just
+          pictures and text-based apps. Short-form video content should eventually be something professional platforms consider
+          implementing as traditional modes of job searching have become more digital.
+          </p>
+          <p>
+          How might we do this?
+          </p>
+          <p>
+            We are all familiar with the brief speech that happens within 20 to 30 seconds in professional environments called an
+            elevator pitch. An elevator pitch is a simple and direct opportunity for job seekers to share their skills more
+            engagingly. Pitch would be a short-form video platform for recruiters to seek out potential employees aside from viewing
+            just resumes and profiles.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <main class="container-fluid mb-4">
+        <div class="d-flex justify-content-evenly">
+                  <!--Aside Section-->
+      <div class="col-4">
+        <img  class="rounded-circle profile-img d-block m-auto" height="70" width="70" src="../assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.22 PM.png"/>
+        <div class="text-center mb-2">
+                <p class="mb-1">Recruiter at Google</p>
+                <a href="#" class="text-decoration-none text-info">Edit profile</a>
+        </div>
+        <hr />
+        <div class="text-center">
+            <h5 class="text-center mb-1">What I'm looking for</h5>
+            <a href="#" class="text-decoration-none text-info">Edit</a>
+        </div>
+     
+        <div class="d-flex align-items-center">
+            <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
+            <span class="badge btn rounded-pill bg-secondary m-2">SRE</span>
+            <span class="badge btn rounded-pill bg-secondary m-2">IT Support</span>
+            <span class="badge btn rounded-pill bg-secondary m-2">Front End Developer</span>
+        </div>
+        <hr />
+        <div class="text-center">
+            <h5 class="text-center mb-3">Recent Activity</h5>
+            <p><span class="text-secondary">5 mins ago</span> You liked Jason's Pitch.</p>
+            <p><span class="text-secondary">15 mins ago</span> You left a comment on Stephanie's pitch.</p>
+            <p><span class="text-secondary">1 hr ago</span> You liked Robert's Pitch.</p>
+           
+            <p><span class="text-secondary">18 hrs ago</span> You liked Jason's Pitch.</p>
+            <p><span class="text-secondary">1 day ago ago</span> You left a comment on Stephanie's pitch.</p>
+            <p><span class="text-secondary">1 week ago</span> You posted a job description.</p>
+        </div>
+      </div>
+
+ <!--Feed-->
+ <div class="col-6 ">
+    <div class="col">
+        <!--Video-->
+        <div class="d-flex align-items-center mb-2">
+            <span class="me-3">
+              <img  class="rounded-circle profile-img" height="60" width="60" src="../assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.58 PM.png" />
+            </span>
+            <div class=" text-left">
+              <p class="mb-0">Tyler Hooks</p>
+              <p class="mb-0 fron">Software Engineer</p>
+            </div>
+          </div>
+        
+            <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
+              <div class="d-flex flex-column">
+                  <iframe class="embed-responsive-item" width="100%"  height="445" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI"> </iframe> 
+              </div>
+            </div>
+                     <!--Tags-->
+                     <div class="d-flex">
+                      <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
+                      <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
+                    </div>  
+            <p class="mb-0">Excellent pitch strategy! If anyone is in need of tips, please watch.</p>
+            <!--Icons-->
+            <div class="d-flex justify-content-lg-start">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <button class="btn">Send a message</button>
+            </div>
+        <hr />
+        <!--Video-->
+        <div class="d-flex align-items-center mb-2">
+            <span class="me-3">
+              <img  class="rounded-circle profile-img" height="60" width="60" src="../assets/profile-pictures/Screen Shot 2021-07-14 at 10.45.21 PM.png" />
+            </span>
+            <div class=" text-left">
+              <p class="mb-0">Tyler Hooks</p>
+              <p class="mb-0 fron">Software Engineer</p>
+            </div>
+          </div>
+        
+            <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
+              <div class="d-flex flex-column">
+                  <iframe class="embed-responsive-item" width="100%"  height="445" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI"> </iframe> 
+              </div>
+            </div>
+                     <!--Tags-->
+                     <div class="d-flex">
+                      <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
+                      <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
+                    </div>  
+            <p class="mb-0">Excellent pitch strategy! If anyone is in need of tips, please watch.</p>
+            <!--Icons-->
+            <div class="d-flex justify-content-lg-start">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <button class="btn">Send a message</button>
+            </div>
+       
+        </div>
+        </div>
+
+     
+      </div>
+      
+    </main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <p class="text-dark mb-0 me-2">	&copy Pitch</p>
+    <p class="text-dark mb-0 me-2">Created by group TARN for the first annual NSBE Linkedin Hackathon</p>
+    <a href="https://github.com/TARN-hack/TARN.git" class=" text-decoration-none me-2">GitHub</a>
+    <a class="text-dark text-decoration-none" aria-current="page" href="#"  data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
+  </div>
+</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

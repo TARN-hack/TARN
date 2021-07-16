@@ -40,8 +40,15 @@ function signIn() {
   var password = document.getElementById("password");
   const promise = auth.signInWithEmailAndPassword(email.value, password.value);
   STATE = "IN";
+  console.log(document.getElementById("rec").value);
 
-  window.location.replace("../");
+  if (document.getElementById("rec").value == "1") {
+    window.location.replace("/pages/recruiter-profile.html");
+  }
+  else{
+    window.location.replace("../");
+
+  }
 }
 
 //signOut

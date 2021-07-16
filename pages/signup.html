@@ -88,19 +88,23 @@
         <form class="form-signin text-center">
             <img class="mb-4" src="../assets/icons/logo.png" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal"> Sign up For Pitch</h1>
-
-<!-- 
+            <select class="form-select mb-2" aria-label="Default select example">
+                <option id="rec" value="1">Sign up as a Recruiter</option>
+                <option value="2">Sign up as a Candidate</option>
+            </select>
+            <!-- 
             <input type="email" placeholder="email here" id="email"><br>
             <input type="password" placeholder="password here" id="password"><br>
       -->
 
-      
-            <input type="email" placeholder="email here" id="email" class="form-control" placeholder="Email address" required=""
-                autofocus="">
-            <input type="password" placeholder="password here" id="password" class="form-control mt-2 mb-2" placeholder="Password" required="">
+
+            <input type="email" placeholder="email here" id="email" class="form-control" placeholder="Email address"
+                required="" autofocus="">
+            <input type="password" placeholder="password here" id="password" class="form-control mt-2 mb-2"
+                placeholder="Password" required="">
 
 
-            <button   onclick="signUp()" class=" mb-2  mt-2 btn btn-lg btn-info btn-block" type="submit">Sign up</button>
+            <button onclick="signUp()" class=" mb-2  mt-2 btn btn-lg btn-info btn-block" type="submit">Sign up</button>
 
 
 

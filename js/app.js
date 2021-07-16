@@ -21,14 +21,14 @@ if (STATE === "IN") {
 }
 //signup function
 function signUp() {
-  var email = document.getElementById("email");
-  var password = document.getElementById("password");
+  // var email = document.getElementById("email");
+  // var password = document.getElementById("password");
 
-  const promise = auth.createUserWithEmailAndPassword(
-    email.value,
-    password.value
-  );
-  //
+  // const promise = auth.createUserWithEmailAndPassword(
+  //   email.value,
+  //   password.value
+  // );
+  // //
   STATE = "IN";
 
   if (document.getElementById("rec").value == "1") {

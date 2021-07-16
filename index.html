@@ -40,45 +40,50 @@
         <div class="d-flex" id="authBtns">
           <button class="btn btn-info me-2" type="Login"> <a href="pages/login.html"> Login</a></button>
           <button class="btn btn-outline-info" type="signUp"><a href="pages/login.html"> Sign Up</a></button>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--About Modal-->
-    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="aboutModal">About</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-          <h4>30 seconds from your next play.</h4>
-          <p>
-          As short-form video content rises in popularity due to apps like TikTok and Triller, social media is shifting from just
-          pictures and text-based apps. Short-form video content should eventually be something professional platforms consider
-          implementing as traditional modes of job searching have become more digital.
-          </p>
-          <p>
-          How might we do this?
-          </p>
-          <p>
-            We are all familiar with the brief speech that happens within 20 to 30 seconds in professional environments called an
-            elevator pitch. An elevator pitch is a simple and direct opportunity for job seekers to share their skills more
-            engagingly. Pitch would be a short-form video platform for recruiters to seek out potential employees aside from viewing
-            just resumes and profiles.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
-          </div>
         </div>
       </div>
     </div>
-    
-    <main class="container-fluid">
-      <div class="d-flex justify-content-evenly">
+  </nav>
+  <!--About Modal-->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModal">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>30 seconds from your next play.</h4>
+          <p>
+            As short-form video content rises in popularity due to apps like TikTok and Triller, social media is
+            shifting from just
+            pictures and text-based apps. Short-form video content should eventually be something professional platforms
+            consider
+            implementing as traditional modes of job searching have become more digital.
+          </p>
+          <p>
+            How might we do this?
+          </p>
+          <p>
+            We are all familiar with the brief speech that happens within 20 to 30 seconds in professional environments
+            called an
+            elevator pitch. An elevator pitch is a simple and direct opportunity for job seekers to share their skills
+            more
+            engagingly. Pitch would be a short-form video platform for recruiters to seek out potential employees aside
+            from viewing
+            just resumes and profiles.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container-fluid">
+    <div class="d-flex justify-content-evenly">
       <!--Aside Section-->
-      <div class="col-4">
+      <div class="col-4" id="discover">
         <div data-bs-spy="scroll">
           <h2>Discover</h2>
           <h5>Popular Jobs</h5>
@@ -109,154 +114,169 @@
           <hr class="mb-2" />
           <p>Suggested Accounts</p>
           <ul class="list-unstyled">
-            
+
             <li class="mb-2">
-                <img  class="rounded-circle profile-img pl-2" height="30" width="30" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.43.58 PM.png" />
-              Tyler Hooks</li>
-              <li class="mb-2">
-                    <img  class="rounded-circle profile-img" height="30" width="30" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.58 PM.png" />
-              Tyler Hooks</li>
-              <li class="mb-2">
-                <img  class="rounded-circle profile-img" height="30" width="30" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.45.21 PM.png" />
-          Tyler Hooks</li>
-          <li class="mb-2">
-            <img  class="rounded-circle profile-img" height="30" width="30" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.22 PM.png" />
-      Tyler Hooks</li>
+              <img class="rounded-circle profile-img pl-2" height="30" width="30"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.43.58 PM.png" />
+              Tyler Hooks
+            </li>
+            <li class="mb-2">
+              <img class="rounded-circle profile-img" height="30" width="30"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.58 PM.png" />
+              Amit Sonar
+            </li>
+            <li class="mb-2">
+              <img class="rounded-circle profile-img" height="30" width="30"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.45.21 PM.png" />
+              Ronan Almeida
+            </li>
+            <li class="mb-2">
+              <img class="rounded-circle profile-img" height="30" width="30"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.22 PM.png" />
+              Nick Lee
+            </li>
           </ul>
         </div>
       </div>
-          <!--Main Section-->
-          <div class="col-6 ">
-            <div class="col">
-              <!--Video-->
-                <div class="d-flex align-items-center mb-2">
-                  <span class="me-3">
-                    <img  class="rounded-circle profile-img" height="60" width="60" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.43.58 PM.png" />
-                  </span>
-                  <div class=" text-left">
-                    <p class="mb-0">Tyler Hooks</p>
-                    <p class="mb-0 fron">Software Engineer</p>
-                  </div>
-                </div>
-              
-                  <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
-                    <div class="d-flex flex-column">
-                        <iframe class="embed-responsive-item" width="100%"  height="445" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI"> </iframe> 
-                    </div>
-                  </div>
-                           <!--Tags-->
-                           <div class="d-flex">
-                            <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
-                            <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
-                          </div>  
-                  <p class="mb-0">Excellent pitch strategy! If anyone is in need of tips, please watch.</p>
-                  <!--Icons-->
-                  <div class="d-flex justify-content-lg-start">
-                    <button class="btn">Like</button>
-                    <button class="btn">Comment</button>
-                    <button class="btn">Send a message</button>
-                  </div>
-              <hr />
-                <!--Video-->
-                <div class="d-flex align-items-center mb-2">
-                  <span class="me-3">
-                    <img  class="rounded-circle profile-img" height="60" width="60" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.58 PM.png" />
-                  </span>
-                  <div class=" text-left">
-                    <p class="mb-0">Tyler Hooks</p>
-                    <p class="mb-0">Software Engineer</p>
-                  </div>
-                </div>
-                  <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
-                    <div class="d-flex flex-column">
-                        <iframe class="embed-responsive-item" width="100%"  height="445" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI"> </iframe> 
-                    </div>
-                  </div>
-                     <!--Tags-->
-                     <div class="d-flex">
-                      <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
-                      <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
-                    </div>  
-                  <p class="mb-0">Excellent pitch strategy! If anyone is in need of tips, please watch.</p>
-                  <!--Icons-->
-                  <div class="d-flex justify-content-lg-start">
-                    <button class="btn">Like</button>
-                    <button class="btn">Comment</button>
-                    <button class="btn">Send a message</button>
-                  </div>
-              <hr />
-              
-                <div class="d-flex align-items-center mb-2">
-                  <span class="me-3">
-                    <img  class="rounded-circle profile-img" height="60" width="60" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.45.21 PM.png" />
-                  </span>
-                  <div class=" text-left">
-                    <p class="mb-0">Tyler Hooks</p>
-                    <p class="mb-0">Software Engineer</p>
-                  </div>
-                </div>
-                  <!--Video-->
-                  <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
-                    <div class="d-flex flex-column">
-                        <iframe class="embed-responsive-item" width="100%"  height="445" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI"> </iframe> 
-                    </div>
-                  </div>
-                     <!--Tags-->
-                     <div class="d-flex">
-                      <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
-                      <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
-                    </div>  
-                  <p class="mb-0">Excellent pitch strategy! If anyone is in need of tips, please watch.</p>
-                  <!--Icons-->
-                  <div class="d-flex justify-content-lg-start">
-                    <button class="btn">Like</button>
-                    <button class="btn">Comment</button>
-                    <button class="btn">Send a message</button>
-                  </div>
-              <hr />
-                <!--Video-->
-                <div class="d-flex align-items-center mb-2">
-                  <span class="me-3">
-                    <img  class="rounded-circle profile-img" height="60" width="60" src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.22 PM.png" />
-                  </span>
-                  <div class=" text-left">
-                    <p class="mb-0">Tyler Hooks</p>
-                    <p class="mb-0">Software Engineer</p>
-                  </div>
-                </div>
-                  <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
-                    <div class="d-flex flex-column">
-                        <iframe class="embed-responsive-item" width="100%"  height="445" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI"> </iframe> 
-                    </div>
-                  </div>
-                     <!--Tags-->
-                     <div class="d-flex">
-                      <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
-                      <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
-                    </div>  
-                  <p class="mb-0">Excellent pitch strategy! If anyone is in need of tips, please watch.</p>
-                  <!--Icons-->
-                  <div class="d-flex justify-content-lg-start">
-                    <button class="btn">Like</button>
-                    <button class="btn">Comment</button>
-                    <button class="btn">Send a message</button>
-                  </div>
+      <!--Main Section-->
+      <div class="col-6 ">
+        <div class="col">
+          <!--Video-->
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-3">
+              <img class="rounded-circle profile-img" height="60" width="60"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.43.58 PM.png" />
+            </span>
+            <div class=" text-left">
+              <p class="mb-0">Tyler Hooks</p>
+              <p class="mb-0 fron">Software Engineer</p>
             </div>
           </div>
+
+          <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
+            <div class="d-flex flex-column">
+              <iframe class="embed-responsive-item" width="100%" height="445"
+                src="https://www.youtube.com/embed/BRqkxz2OCd0"> </iframe>
+            </div>
+          </div>
+          <!--Tags-->
+          <div class="d-flex">
+            <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
+            <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
+          </div>
+          <!--Icons-->
+          <div class="d-flex justify-content-lg-start">
+            <button class="btn">Like</button>
+            <button class="btn">Comment</button>
+            <button class="btn">Send a message</button>
+          </div>
+          <hr />
+          <!--Video-->
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-3">
+              <img class="rounded-circle profile-img" height="60" width="60"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.58 PM.png" />
+            </span>
+            <div class=" text-left">
+              <p class="mb-0">Ronan Almeida</p>
+              <p class="mb-0">Software Engineer</p>
+            </div>
+          </div>
+          <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
+            <div class="d-flex flex-column">
+              <iframe class="embed-responsive-item" width="100%" height="445"
+                src="https://www.youtube.com/embed/Lb0Yz_5ZYzI"> </iframe>
+            </div>
+          </div>
+          <!--Tags-->
+          <div class="d-flex">
+            <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
+            <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
+          </div>
+
+          <!--Icons-->
+          <div class="d-flex justify-content-lg-start">
+            <button class="btn">Like</button>
+            <button class="btn">Comment</button>
+            <button class="btn">Send a message</button>
+          </div>
+          <hr />
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-3">
+              <img class="rounded-circle profile-img" height="60" width="60"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.45.21 PM.png" />
+            </span>
+            <div class=" text-left">
+              <p class="mb-0">Nick Lee</p>
+              <p class="mb-0">Software Engineer</p>
+            </div>
+          </div>
+          <!--Video-->
+          <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
+            <div class="d-flex flex-column">
+              <iframe class="embed-responsive-item" width="100%" height="445"
+                src="https://www.youtube.com/embed/r-iETptU7JY"> </iframe>
+            </div>
+          </div>
+          <!--Tags-->
+          <div class="d-flex">
+            <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
+            <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
+          </div>
+
+          <!--Icons-->
+          <div class="d-flex justify-content-lg-start">
+            <button class="btn">Like</button>
+            <button class="btn">Comment</button>
+            <button class="btn">Send a message</button>
+          </div>
+          <hr />
+          <!--Video-->
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-3">
+              <img class="rounded-circle profile-img" height="60" width="60"
+                src="./assets/profile-pictures/Screen Shot 2021-07-14 at 10.44.22 PM.png" />
+            </span>
+            <div class=" text-left">
+              <p class="mb-0">Amit Sonar</p>
+              <p class="mb-0">Software Engineer</p>
+            </div>
+          </div>
+          <div class="card card-cover  overflow-hidden bg-dark rounded-5 shadow-lg mb-3">
+            <div class="d-flex flex-column">
+              <iframe class="embed-responsive-item" width="100%" height="445"
+                src="https://www.youtube.com/embed/4WEQtgnBu0I"> </iframe>
+            </div>
+          </div>
+          <!--Tags-->
+          <div class="d-flex">
+            <span class="badge btn rounded-pill bg-secondary m-2">Software Engineer</span>
+            <span class="badge btn rounded-pill bg-info m-2">IT Support</span>
+          </div>
+
+          <!--Icons-->
+          <div class="d-flex justify-content-lg-start">
+            <button class="btn">Like</button>
+            <button class="btn">Comment</button>
+            <button class="btn">Send a message</button>
+          </div>
+        </div>
       </div>
-    </main>
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <p class="text-dark mb-0 me-2">	&copy Pitch</p>
-        <p class="text-dark mb-0 me-2">Created by group TARN for the first annual NSBE Linkedin Hackathon</p>
-        <a href="https://github.com/TARN-hack/TARN.git" class=" text-decoration-none me-2">GitHub</a>
-        <a class="text-dark text-decoration-none" aria-current="page" href="#"  data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
-      </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </main>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <p class="text-dark mb-0 me-2"> &copy Pitch</p>
+      <p class="text-dark mb-0 me-2">Created by group TARN for the first annual NSBE Linkedin Hackathon</p>
+      <a href="https://github.com/TARN-hack/TARN.git" class=" text-decoration-none me-2">GitHub</a>
+      <a class="text-dark text-decoration-none" aria-current="page" href="#" data-bs-toggle="modal"
+        data-bs-target="#aboutModal">About</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

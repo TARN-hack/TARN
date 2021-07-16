@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyD5dKDFMqUQmnQdWrF-Ofz7z5qBeo_qVPc",
+            authDomain: "pitch30-1760a.firebaseapp.com",
+            projectId: "pitch30-1760a",
+            storageBucket: "pitch30-1760a.appspot.com",
+            messagingSenderId: "978948697469",
+            appId: "1:978948697469:web:ea43ceb093c60a0d3f3014",
+            measurementId: "G-Z6M33N7X5S"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand text-info" href="#">Pitch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#aboutModal">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+                <div class="nav-item dropdown col-2 ms-4 align-self-center">
+                    <a class="nav-link d-flex flex-column" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="rounded-circle profile-img" height="45" width="45"
+                            src="https://www.clipartmax.com/png/full/171-1717870_stockvader-predicted-cron-for-may-user-profile-icon-png.png" />
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Upload
+                            </a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Inbox
+                                <span class="badge rounded-pill bg-info text-dark">25</span>
+                            </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--About Modal-->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModal">About</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>30 seconds from your next play.</h4>
+                    <p>
+                        As short-form video content rises in popularity due to apps like TikTok and Triller, social
+                        media is shifting from just
+                        pictures and text-based apps. Short-form video content should eventually be something
+                        professional platforms consider
+                        implementing as traditional modes of job searching have become more digital.
+                    </p>
+                    <p>
+                        How might we do this?
+                    </p>
+                    <p>
+                        We are all familiar with the brief speech that happens within 20 to 30 seconds in professional
+                        environments called an
+                        elevator pitch. An elevator pitch is a simple and direct opportunity for job seekers to share
+                        their skills more
+                        engagingly. Pitch would be a short-form video platform for recruiters to seek out potential
+                        employees aside from viewing
+                        just resumes and profiles.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container-fluid mb-4">
+        <label class="btn btn-info" for="my-file-selector">
+            <input id="my-file-selector" type="file" class="d-none">
+            Pitch
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <p class="text-dark mb-0 me-2"> &copy Pitch</p>
+            <p class="text-dark mb-0 me-2">Created by group TARN for the first annual NSBE Linkedin Hackathon</p>
+            <a href="https://github.com/TARN-hack/TARN.git" class=" text-decoration-none me-2">GitHub</a>
+            <a class="text-dark text-decoration-none" aria-current="page" href="#" data-bs-toggle="modal"
+                data-bs-target="#aboutModal">About</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $("#my-file-selector").change(function () {
+                var path = $(this).prop('files')[0]
+                // Create a root reference
+                var storageRef = firebase.storage().ref();
+
+                // Create a reference to 'mountains.jpg'
+                var mountainsRef = storageRef.child(path);
+
+                // Create a reference to 'images/mountains.jpg'
+                var mountainImagesRef = storageRef.child(path);
+
+                // While the file names are the same, the references point to different files
+                mountainsRef.name === mountainImagesRef.name;           // true
+                mountainsRef.fullPath === mountainImagesRef.fullPath;   // false 
+                ref.put(file).then((snapshot) => {
+                    console.log('Uploaded a blob or file!');
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

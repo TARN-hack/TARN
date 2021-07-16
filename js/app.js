@@ -31,23 +31,25 @@ function signUp() {
   //
   STATE = "IN";
 
-  window.location.replace("../");
+  if (document.getElementById("rec").value == "1") {
+    window.location.replace("/pages/recruiter-profile.html");
+  } else {
+    window.location.replace("../");
+  }
 }
 
 //signIN function
 function signIn() {
-  var email = document.getElementById("email");
-  var password = document.getElementById("password");
-  const promise = auth.signInWithEmailAndPassword(email.value, password.value);
-  STATE = "IN";
-  console.log(document.getElementById("rec").value);
+  // var email = document.getElementById("email");
+  // var password = document.getElementById("password");
+  // const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+  // STATE = "IN";
+  // console.log(document.getElementById("rec").value);
 
   if (document.getElementById("rec").value == "1") {
     window.location.replace("/pages/recruiter-profile.html");
-  }
-  else{
+  } else {
     window.location.replace("../");
-
   }
 }
 

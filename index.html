@@ -91,7 +91,7 @@
           </form>
           <div class="d-flex" id="authBtns">
             <label class="btn btn-info">
-                Pitch<input type="file" hidden>
+                Pitch<input id="upload-pitch" type="file" hidden>
             </label>
           </div>
         </div>
@@ -515,5 +515,19 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+    $(document).ready(function () {
+      $("#upload-pitch").change(function () {
+        var path = $(this).prop('files')[0]
+        // Create a root reference
+        var storageRef = firebase.storage().ref(""+new Date().getTime());
+
+        storageRef.put(file).then((snapshot) => {
+          console.log('Uploaded a blob or file!');
+        });
+      });
+    });
+    
+  </script>
   </body>
 </html>

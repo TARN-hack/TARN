@@ -521,7 +521,7 @@
         var path = $(this).prop('files')[0]
         console.log(path)
         // Create a root reference
-        var storageRef = firebase.storage().ref(""+new Date().getTime());
+        var storageRef = firebase.storage().ref("pitch/"+path.name);
 
         storageRef.put(path).then((snapshot) => {
           console.log('Uploaded a blob or file!');
